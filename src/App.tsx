@@ -1,8 +1,12 @@
-import React from 'react';
+import './GlobalStyle.css';
+import { BrowserRouter } from 'react-router-dom';
+import Routes from './routes';
 
 function App() {
   return (
-    <h2>Olá</h2>
+    <BrowserRouter>
+      <Routes />
+    </BrowserRouter>
   );
 }
 

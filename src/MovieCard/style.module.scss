@@ -1,0 +1,42 @@
+.card {
+    max-width: 345px;
+    max-height: 380px;
+    margin-bottom: 60px;
+    background-color: #1d1f21;
+
+    &__img {
+        max-height: 190px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    &__info {
+        min-height: 190px;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        white-space: normal;
+        padding: 16px 8px;
+
+        h3 {
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        h4 {
+            margin-top: 8px;
+        }
+
+        p {
+            margin-top: 8px;
+            max-height: 72px;
+            overflow: hidden;
+            text-overflow: clip;
+        }
+
+        a {
+            margin-top: auto;
+            color: #fff;
+        }
+    }
+}
