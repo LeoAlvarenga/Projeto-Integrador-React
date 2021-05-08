@@ -31,10 +31,16 @@ const Home: React.FC = () => {
             <div className={s['main__list']}>
                 {movieList && movieList?.results.length! > 0 && (
                     movieList.results.map(movie => (
-                        <MovieCard key={movie.id} date={formatDateBR(movie.release_date)} imageCover={movie.poster_path} movieId={movie.id.toString()} overview={movie.overview} title={movie.title} />
+                        <MovieCard 
+                            key={movie.id} 
+                            date={formatDateBR(movie.release_date)} 
+                            imageCover={movie.poster_path} 
+                            movieId={movie.id.toString()} 
+                            overview={movie.overview} 
+                            title={movie.title} 
+                        />
                     ))
-                )
-                }
+                )}
             </div>
         </div>
     );
