@@ -1,5 +1,5 @@
 import React, { useLayoutEffect, useState } from 'react';
-import { MovieCard } from '../../MovieCard';
+import { MovieCard } from '../../components/MovieCard';
 import tmdbApi from '../../services/tmdbApi';
 import { formatDateBR } from '../../utils/formatters';
 import s from './style.module.scss';
